@@ -1,6 +1,7 @@
 #import "Highscores.h"
 #import "Main.h"
 #import "Game.h"
+#import "MoreGamers.h"
 
 @interface Highscores (Private)
 - (void)loadCurrentPlayer;
@@ -74,7 +75,7 @@
 		label3.position = ccp(160,start_y-count*step);
 		
 		count++;
-		if(count == 10) break;
+		if(count == 5) break;
 	}
 
 	CCMenuItem *button1 = [CCMenuItemImage itemFromNormalImage:@"playAgainButton.png" selectedImage:@"playAgainButton.png" target:self selector:@selector(button1Callback:)];
@@ -83,10 +84,15 @@
 	CCMenu *menu = [CCMenu menuWithItems: button1, button2, nil];
 
 	[menu alignItemsVerticallyWithPadding:9];
-	menu.position = ccp(160,58);
+	menu.position = ccp(160,175);
 	
 	[self addChild:menu];
-	
+    
+    CGRect bounds = [[UIScreen mainScreen] bounds];
+    float height = 145 / (525 / bounds.size.width);
+    [[MoreGamers sharedInstance] Initialize:5228];
+    [[MoreGamers sharedInstance] Banner:CGRectMake(0, bounds.size.height - height, bounds.size.width, height)];
+     
 	return self;
 }
 
@@ -177,7 +183,8 @@
 
 - (void)button1Callback:(id)sender {
 //	NSLog(@"button1Callback");
-
+    [[MoreGamers sharedInstance] Hide];
+    
 	CCTransitionScene *ts = [CCTransitionFade transitionWithDuration:0.5f scene:[Game scene] withColor:ccWHITE];
 	[[CCDirector sharedDirector] replaceScene:ts];
 }

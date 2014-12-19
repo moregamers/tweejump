@@ -115,6 +115,7 @@
 		F4D0CBE115ACD027007C74DF /* changePlayerButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F4D0CBDC15ACD027007C74DF /* changePlayerButton.png */; };
 		F4D0CBE215ACD027007C74DF /* playAgainButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F4D0CBDD15ACD027007C74DF /* playAgainButton.png */; };
 		F4D0CBE315ACD027007C74DF /* sprites.png in Resources */ = {isa = PBXBuildFile; fileRef = F4D0CBDE15ACD027007C74DF /* sprites.png */; };
+		FA97FBF81A43C05C002451E5 /* MoreGamers.m in Sources */ = {isa = PBXBuildFile; fileRef = FA97FBF71A43C05C002451E5 /* MoreGamers.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -332,6 +333,8 @@
 		F4D0CBDC15ACD027007C74DF /* changePlayerButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = changePlayerButton.png; sourceTree = "<group>"; };
 		F4D0CBDD15ACD027007C74DF /* playAgainButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playAgainButton.png; sourceTree = "<group>"; };
 		F4D0CBDE15ACD027007C74DF /* sprites.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sprites.png; sourceTree = "<group>"; };
+		FA97FBF51A43C053002451E5 /* MoreGamers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoreGamers.h; path = ../../../../../../Users/psyon/Documents/Projects/tweejump/tweejump/MoreGamers.h; sourceTree = "<group>"; };
+		FA97FBF71A43C05C002451E5 /* MoreGamers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoreGamers.m; path = ../../../../../../Users/psyon/Documents/Projects/tweejump/tweejump/MoreGamers.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -388,6 +391,8 @@
 		F49E736B15ACCF46009C8E84 /* tweejump */ = {
 			isa = PBXGroup;
 			children = (
+				FA97FBF71A43C05C002451E5 /* MoreGamers.m */,
+				FA97FBF51A43C053002451E5 /* MoreGamers.h */,
 				F49E74BD15ACCF4A009C8E84 /* AppDelegate.h */,
 				F49E74BE15ACCF4A009C8E84 /* AppDelegate.m */,
 				F49E74C015ACCF4A009C8E84 /* RootViewController.h */,
@@ -856,6 +861,7 @@
 				F4D0CBD415ACD01C007C74DF /* Game.m in Sources */,
 				F4D0CBD515ACD01C007C74DF /* Highscores.m in Sources */,
 				F4D0CBD615ACD01C007C74DF /* Main.m in Sources */,
+				FA97FBF81A43C05C002451E5 /* MoreGamers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

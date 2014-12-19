@@ -1,5 +1,7 @@
 # Tweejump
 
+Forked to show an example of how to implement the MoreGamers.com banner exchange.
+
 ![Tweejump](http://iplayful.com/tweejump/tweejump.jpg)
 
 Jump on platforms, collect coins on the way, and get highest score.
